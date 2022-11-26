@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index copy 2.css">
+    <title>Quiz Time 2</title>
+    <style>
+        .button {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #04AA6D;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+
+        .button:hover {
+            background-color: #3e8e41
+        }
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        .buttons-1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: center;
+        }
+
+        .black {
+            margin: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: center;
+        }
+
+        .hidden-ques {
+            display: none;
+        }
+    </style>
+    <script>
+        const showNext = () => {
+            const q1 = document.querySelector("#q-1")
+            q1.classList.add("hidden-ques")
+            const q2 = document.querySelector("#q-2")
+            q2.classList.remove("hidden-ques")
+        }
+        const showNext2 = () => {
+            const q2 = document.querySelector("#q-2")
+            q2.classList.add("hidden-ques")
+            const q3 = document.querySelector("#q-3")
+            q3.classList.remove("hidden-ques")
+        }
+        const showNext3 = () => {
+            const q3 = document.querySelector("#q-3")
+            q3.classList.add("hidden-ques")
+            const endThanks = document.querySelector("#end-thanks")
+            endThanks.classList.remove("hidden-ques")
+        }
+    </script>
+</head>
+
+<body bgcolor="aqua">
+    <center>
+        <h1 class="a" style="color:black"><span style="color:green">Q</span><span style="color:gold">u</span><span
+                style="color:olivedrab">i</span><span style="color:#FF0000">z</span> <span
+                style="color:gold">w</span><span style="color:#FF0000">i</span><span style="color:green">t</span><span
+                style="color:black">h</span> <span style="color:green">F</span><span style="color:gold">i</span><span
+                style="color:red">z</span><span style="color:#666">z</span></h1>
+    </center>
+    <br>
+    
+
+    <div id="q-1">
+        <div>
+            <center>
+                <h2><span style="color:darkblue">Which</span> <span style="color:green">type</span> <span
+                        style="color:orangered">of</span> <span style="color:red">soil</span> <span
+                        style="color:green">is</span> <span style="color:orangered">majorly</span> <span
+                        style="color:black">found</span> <span style="color:darkblue">in</span> <span
+                        style="color:crimson">Goa?</span></h2>
+            </center>
+        </div>
+        <div class="buttons-1">
+            <div>
+                <button id="b-1" class="button">Black soil</button>
+                <br><br><img src="black.jpg" height="100px" width="120px">
+            </div>
+            
+            <div>
+                <button id="b-2" class="button" onclick="showNext()">Laterite</button>
+                <br><br><img src="latri.jpeg" height="100px" width="120px">
+            </div>
+            <div>
+                <button id="b-3" class="button">Alluvial </button>
+                <br><br><img src="allu.jpeg" height="100px" width="120px">
+            </div>
+        </div>
+        <div class="black">           
+            <img src="soil.gif" height="200px"  width="250px">
+            <img src="h.gif" height="200px" width="250px">
+        </div>
+    </div>
+    
+    <div id="q-2" class="hidden-ques">
+        <br>
+        <div>
+            <center>
+                <h2><span style="color:darkblue">Who</span> <span style="color:green">proposed</span> <span
+                        style="color:orangered">the</span> <span style="color:red">principle of</span> <span
+                        style="color:green">soil</span> <span style="color:orangered">and</span> <span
+                        style="color:black">its</span> <span style="color:darkblue">layers</span> <span
+                        style="color:crimson">?</span></h2>
+            </center>
+        </div>
+        
+        <div class="buttons-1">
+            <div>
+                <button id="b-1" align="right" class="button">Issac Newton</button>
+                <br><br><img src="issac.jpeg" height="100px" width="125px">
+            </div>
+           
+            <div>
+                <button id="b-2" class="button">Albert Einstein</button>
+                <br><br><img src="albert.webp" height="100px" width="125px">
+            </div>
+            
+            <div>
+                <button id="b-3" class="button" onclick="showNext2()">Nathaniel Shaler </button>
+                <br><br><img src="Nathaniel_Shaler.jpg" height="100px" width="125px">
+            </div>
+            
+        </div>
+        <div class="black">
+            <img src="life.gif" height="200px" width="250px">
+            <img src="sci.gif" height="200px" width="250px">
+        </div>
+    </div>
+
+    <div id="q-3" class="hidden-ques">
+        <br>
+        <div>
+            <center>
+                <h2><span style="color:darkblue">How</span> <span style="color:green">many</span> <span
+                        style="color:brown">minimum years</span> <span style="color:red">does it take</span> <span
+                        style="color:green">to form </span> <span style="color:orangered">one inch of </span> <span
+                        style="color:black">topsoil</span> <span
+                        style="color:crimson">?</span></h2>
+            </center>
+        </div>
+
+        <div class="buttons-1">
+            <div>
+                <button id="b-1" align="right" class="button">1000 years</button>
+                <br><br><img src="1000.webp" height="100px" width="125px">
+            </div>
+            
+            <div>
+                <button id="b-2" class="button">250 years</button>
+                <br><br><img src="250.webp" height="100px" width="125px">
+            </div>
+            
+            <div>
+                <button id="b-3" class="button" onclick="showNext3()">500 years</button>
+                <br><br><img src="500.webp" height="100px" width="125px">
+            </div>
+            
+        </div>
+        <div class="black">
+            <img src="evo.gif" height="200px"  width="250px">
+            <img src="how.gif" height="200px" width="250px">
+        </div>
+    </div>
+    <center><div id="end-thanks" class="hidden-ques"><img src="thank.jpg"></div></center>
+</body>
+
+</html>
